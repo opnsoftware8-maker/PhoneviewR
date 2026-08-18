@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* ผูก Font Variable จาก layout.tsx เข้ากับ Tailwind */
+@theme {
+  --font-trirong: var(--font-trirong);
+  --font-prompt: var(--font-prompt);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+}
+
+/* ซ่อน Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
